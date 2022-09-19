@@ -10,33 +10,18 @@
     <body>
         <div id="app">
             <h1>{{counter}}</h1>
-            <form action="">
-                <input type="text">
+            
+                <input @keyup="logName()" type="text">
+                <input @keyup.enter="logName()" type="text">
+                <input @keyup.alt.enter="logName()" type="text">
                 <button v-on:click.prevent="add()">submit</button>
                 <a v-on:click.prevent href="https://www.linkedin.com/in/fadel-ellah-errami-879b13207/">linkdin</a>
-            </form>
-            <div>
-                <button v-on:click.once="counter++">Inc</button>
-                <button v-on:click="counter--">Des</button>
-            </div>
+           
+            
             <div>
                 <button @click="counter++">Inc</button>
                 <button @click="counter--">Des</button>
-            </div>
-            <div>
-                <button v-on:click="increment()">Inc</button>
-                <button v-on:click="decrement()">Des</button>
-            </div>
-            <div>
-                <button v-on:click="increment2(2)">Inc</button>
-                <button v-on:click="decrement2(2)">Des</button>
-            </div>
-            <div>
-                <button v-on:dblclick="increment2(2)">Inc</button>
-                <button v-on:dblclick="decrement2(2)">Des</button>
-            </div>
-            
-
+            </div>         
         </div>
     
         
