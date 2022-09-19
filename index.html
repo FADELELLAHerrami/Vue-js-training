@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> bright coding VueJs 2 </title>
+    <script src="vuejs.js"></script>
+
+    <body>
+        <div id="app">
+            <h1>{{counter}}</h1>
+            <div>
+                <button v-on:click="counter++">Inc</button>
+                <button v-on:click="counter--">Des</button>
+            </div>
+            <div>
+                <button @click="counter++">Inc</button>
+                <button @click="counter--">Des</button>
+            </div>
+            <div>
+                <button v-on:click="increment()">Inc</button>
+                <button v-on:click="decrement()">Des</button>
+            </div>
+            <div>
+                <button v-on:click="increment2(2)">Inc</button>
+                <button v-on:click="decrement2(2)">Des</button>
+            </div>
+            <div>
+                <button v-on:dblclick="increment2(2)">Inc</button>
+                <button v-on:dblclick="decrement2(2)">Des</button>
+            </div>
+            
+
+        </div>
+    
+        
+    <script src="script.js"></script>
+    </body>
+</body>
+</html>
