@@ -3,6 +3,7 @@ new Vue({
     el: '#app',
     data:{
         counter:0,
+        name:'',
     },
     methods:{
         add:function(){

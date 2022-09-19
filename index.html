@@ -10,14 +10,9 @@
     <body>
         <div id="app">
             <h1>{{counter}}</h1>
-            
-                <input @keyup="logName()" type="text">
-                <input @keyup.enter="logName()" type="text">
-                <input @keyup.alt.enter="logName()" type="text">
+                <input  v-model="name" @keyup.alt.enter="logName()" type="text">
                 <button v-on:click.prevent="add()">submit</button>
-                <a v-on:click.prevent href="https://www.linkedin.com/in/fadel-ellah-errami-879b13207/">linkdin</a>
-           
-            
+                <span>{{ name }}</span>
             <div>
                 <button @click="counter++">Inc</button>
                 <button @click="counter--">Des</button>
