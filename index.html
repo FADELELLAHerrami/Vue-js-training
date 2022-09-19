@@ -10,8 +10,13 @@
     <body>
         <div id="app">
             <h1>{{counter}}</h1>
+            <form action="">
+                <input type="text">
+                <button v-on:click.prevent="add()">submit</button>
+                <a v-on:click.prevent href="https://www.linkedin.com/in/fadel-ellah-errami-879b13207/">linkdin</a>
+            </form>
             <div>
-                <button v-on:click="counter++">Inc</button>
+                <button v-on:click.once="counter++">Inc</button>
                 <button v-on:click="counter--">Des</button>
             </div>
             <div>

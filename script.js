@@ -17,5 +17,8 @@ new Vue({
         decrement2:function(step){
             this.counter-=step;
         },
+        add:function(){
+            alert("submit");
+        }
     }
 })
